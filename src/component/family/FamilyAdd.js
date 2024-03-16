@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm, useFieldArray } from "react-hook-form";
 import axios from "axios";
-import {
-  URL_family_list,
-  URL_family_add,
-  URL_familydelete,
-  URL_family_update,
-} from "../Urls/Urls";
-import { URL_CUS } from "../Urls/Urls";
+import { URL_family_add } from "../Urls/Urls";
 import "./familyadd.css";
 
 const FamilyAdd = () => {

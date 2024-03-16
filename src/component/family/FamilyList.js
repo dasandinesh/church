@@ -3,13 +3,7 @@ import axios from "axios";
 import { useForm, useFieldArray } from "react-hook-form";
 import ReactPaginate from "react-paginate";
 
-import {
-  URL_family_list,
-  URL_family_add,
-  URL_familydelete,
-  URL_family_update,
-  URL_family_member_list,
-} from "../Urls/Urls";
+import { URL_family_list, URL_family_update } from "../Urls/Urls";
 import FamilyDetails from "./FamilyDetails";
 
 const FamilyList = () => {

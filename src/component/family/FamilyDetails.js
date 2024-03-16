@@ -1,20 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {
-  URL_family_list,
-  URL_family_add,
-  URL_familydelete,
-  URL_family_update,
-  URL_family_member_list,
-} from "../Urls/Urls";
+import { URL_familydelete } from "../Urls/Urls";
 
 const FamilyDetails = ({ selectedFamily, closeModal }) => {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [enteredId, setEnteredId] = useState("");
-
-  const handleViews = (family) => {
-    console.log(family);
-  };
 
   const handleDelete = async () => {
     if (enteredId === selectedFamily._id) {
