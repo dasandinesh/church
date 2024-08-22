@@ -304,7 +304,7 @@ const MemberAdd = () => {
             placeholder="Parson baptized"
           /></td></tr>
 
-<tr><th>area</th><td>  <input
+<tr><th>Area</th><td>  <input
             type="text"
             value={area}
             onChange={(e) => setArea(e.target.value)}

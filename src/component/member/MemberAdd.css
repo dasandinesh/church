@@ -1,57 +1,105 @@
 /* Style the form container */
 .formdiv {
-  max-width: 600px;
+  max-width: 100%; /* Full width on mobile */
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 15px; /* Reduced padding for mobile */
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Slightly larger border radius for a modern look */
+  background-color: #fafafa; /* Light background color */
 }
 
 /* Style the form elements */
 form {
-  margin-top: 20px;
+  margin-top: 15px; /* Reduced margin for mobile */
 }
 
+/* Responsive table styling */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Increased margin for spacing */
 }
 
+/* Table headers and cells */
 th,
 td {
-  padding: 10px;
+  padding: 12px; /* Increased padding for readability */
   text-align: left;
-}
-/*   
-  input {
-    width: 100%;
-    padding: 8px;
-    margin: 4px 0;
-    box-sizing: border-box;
-  }
-   */
-label {
-  margin-right: 10px;
+  border-bottom: 1px solid #ddd; /* Subtle border for row separation */
 }
 
-/* Style the radio buttons */
+/* Form input fields */
+.smallinput,
+select,
+textarea {
+  width: 100%; /* Full width of container */
+  padding: 4px; /* Adequate padding */
+  margin: 4px 0; /* Margin between elements */
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for inputs */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Style the labels */
+label {
+  display: block; /* Full width label for better alignment */
+  margin-bottom: 8px; /* Space between label and input */
+  font-weight: bold; /* Bold text for labels */
+}
+
+/* Style the radio buttons and checkboxes */
 p {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin: 10px 0; /* Space around radio buttons */
 }
 
 /* Style the submit button */
 button {
   background-color: #4caf50;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 20px; /* Increased padding for better touch targets */
   border: none;
-  border-radius: 4px;
+  border-radius: 6px; /* Rounded corners for button */
   cursor: pointer;
+  font-size: 16px; /* Larger font size for readability */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Change button color on hover */
 button:hover {
   background-color: #45a049;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .formdiv {
+    padding: 10px; /* Adjust padding for tablets */
+  }
+
+  button {
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+
+  table {
+    font-size: 14px; /* Adjust font size in tables */
+  }
+}
+
+@media (max-width: 480px) {
+  .formdiv {
+    padding: 8px; /* Less padding for very small screens */
+  }
+
+  button {
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 12px; /* Smaller font size */
+  }
+
+  table {
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  th, td {
+    padding: 8px; /* Less padding in table cells */
+  }
 }

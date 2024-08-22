@@ -72,24 +72,27 @@ const FamilyAdd = () => {
       <div className="row">
         <div className="col-4">
           <label>Family Number</label>
-          <input {...register("familyNumber", { required: true })} />
+          <input 
+          className="smallinput"
+          {...register("familyNumber", { required: true })} />
           <br />
           <label>Family Head Name</label>
-          <input {...register("familyName", { required: true })} />
+          <input className="smallinput" {...register("familyName", { required: true })} />
         </div>
         <div className="col-4">
           <label>Marriage Date</label>
           <input
+          className="smallinput"
             type="date"
             {...register("marriageDate", { required: true })}
           />
           <br />
           <label>Home Address</label>
-          <input {...register("homeAddress", { required: true })} />
+          <input className="smallinput" {...register("homeAddress", { required: true })} />
         </div>
         <div className="col-4">
           <label>Phone Number</label>
-          <input type="tel" {...register("phoneNumber", { required: true })} />
+          <input className="smallinput" type="tel" {...register("phoneNumber", { required: true })} />
         </div>
       </div>
       <br />
@@ -268,7 +271,6 @@ const FamilyAdd = () => {
         Add Member
       </button>
 
-      {/* Submit button */}
       <button type="submit">Submit</button>
     </form>
   );

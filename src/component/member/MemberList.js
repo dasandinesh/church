@@ -87,10 +87,11 @@ const MemberList = () => {
       <div className="row">
         {/* Filter inputs */}
 
-        <div className="col-2">
-          <label>search by name:</label>
+        <div className="col-4">
+          <label>Search by Name:</label>
           <br />
           <input
+            className="smallinput"
             type="text"
             placeholder="search by name"
             onChange={(e) => {
@@ -98,42 +99,47 @@ const MemberList = () => {
             }}
           />
         </div>
-        <div className="col-2">
+        <div className="col-4">
           <label>Search by Gender:</label>
           <br />
-          <select value={Gender} onChange={(e) => setGender(e.target.value)}>
+          <select
+                    className="smallinput"
+                    value={Gender} onChange={(e) => setGender(e.target.value)}>
             <option value="">All Genders</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
           </select>
         </div>
-        <div className="col-2">
+        <div className="col-4">
           <label>Start Date:</label>
           <input
+            className="smallinput"
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
           />
           <label>End Date:</label>
           <input
+          className="smallinput"
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
           />
         </div>
-        <div className="col-2">
-          <label>search by Age:</label>
+        <div className="col-4">
+          <label>Search by Age:</label>
           <br />
           <label>Fromage:</label>
           <input
+           className="smallinput"
             type="text"
             value={Fromage}
             onChange={(e) => setFromage(e.target.value)}
           />
-          <br />
           <label>Toage:</label>
           <input
+          className="smallinput"
             type="text"
             value={Toage}
             onChange={(e) => setToage(e.target.value)}
