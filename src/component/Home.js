@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import chrch1 from '../assets/images/chrch1.jpeg';
 import chrch2 from '../assets/images/charch2.jpeg';
 import chrch3 from '../assets/images/charch3.jpeg';
 import chrch4 from '../assets/images/charch4.jpeg';
@@ -12,7 +11,7 @@ const Home = () => {
   const [error, setError] = useState(null); // State to handle error
   const [currentImage, setCurrentImage] = useState(0); // State to handle slideshow index
 
-  const images = [chrch1, chrch2, chrch3, chrch4]; // Array of images
+  const images = [ chrch2, chrch3, chrch4]; // Array of images
 
   useEffect(() => {
     // Function to fetch schedule data
