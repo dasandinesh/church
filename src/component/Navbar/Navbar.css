@@ -3,8 +3,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  border: 1px solid #1995AD;
+  background-color: #1995AD;
 }
 
 li {
@@ -31,3 +31,15 @@ li a.active {
   order: 2; /* Changes the order of the toggle button */
   margin-left: auto; /* Aligns the toggle button to the right side */
 }
+.float-right {
+  margin-left: auto;
+  float: right;
+}
+.custom-navbar .nav-link {
+  color: #ECECEC !important;
+}
+
+/* .custom-navbar .btn-outline-primary {
+  color: #ECECEC !important;
+  border-color: #ECECEC !important;
+} */

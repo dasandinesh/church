@@ -1,0 +1,31 @@
+.church-services {
+    font-family: 'Roboto', sans-serif; /* Unique font family */
+    color: #333333; /* Unique font color */
+  }
+  
+  .church-services h4 {
+    font-size: 1.5rem;
+    color: #1995AD; /* Different color for headings */
+  }
+  
+  .church-services ul {
+    background-color: #F1F1F2;
+    padding: 10px;
+    list-style-type: square;
+    border-radius: 5px;
+  }
+  
+  .church-services li {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #333333; /* Text color for list items */
+  }
+.main{
+  margin-left: 2%;
+}
+.main2{
+  margin-left: 3%;
+}
+.main3{
+  color:#1995AD;
+  padding: 20px;
+}

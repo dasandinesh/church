@@ -1,0 +1,21 @@
+
+.date{
+    width: 100px;
+    font-size: medium;
+}
+.name{
+    width: 300px;
+    font-size: medium;
+}
+.download{
+    width: 100px;
+    font-size: medium;
+}
+.reading{
+    width: 100px;
+    font-size: medium;
+}
+.head{
+  color: #1995AD;
+}
+
